@@ -29,7 +29,7 @@ header {
     background-color: white;
 }
 nav {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     height: 6rem;
     display: flex;
