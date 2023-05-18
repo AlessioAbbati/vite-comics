@@ -32,7 +32,7 @@ export default {};
         <section class="footer-mid">
             <div class="contacts">
                <div class="links">
-                <div>
+                <div class="column">
                     <ul>
                         <li class="title">DC COMICS</li>
                         <li><a href="">Character</a></li>
@@ -81,7 +81,15 @@ export default {};
         </section>
         <section class="footer-bot">
             <div class="socials">
-
+            <button>SIGN-UP NOW!</button>
+            <div class="social">
+                <h3>FOLLOW US</h3>
+                <img src="../assets/img/footer-facebook.png" alt="">
+                <img src="../assets/img/footer-twitter.png" alt="">
+                <img src="../assets/img/footer-youtube.png" alt="">
+                <img src="../assets/img/footer-pinterest.png" alt="">
+                <img src="../assets/img/footer-periscope.png" alt="">
+            </div>
             </div>
         </section>
     </footer>
@@ -130,6 +138,11 @@ export default {};
     }
     .links {
        display: flex;
+       gap: 1.5rem;
+       .column {
+        display: flex;
+        flex-direction: column;
+       }
        .title {
         font-weight: 700;
         color: white;
@@ -149,8 +162,29 @@ export default {};
 }
 
 .footer-bot {
-    height: 5rem;
-    background-color: gray;
+    background-color: rgb(48, 48, 48);
+    .socials {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+        height: 5rem;
+        button {
+            background-color: transparent;
+            color: white;
+            border: 1px solid blue;
+            padding: .7rem;
+        }
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        h3 {
+            color: blue;
+        }
+    }
 }
 </style>
 
