@@ -13,7 +13,7 @@ export default {};
 @use './../assets/styles/partials/variables.scss' as *;
 
 main {
-    background-color: black;
+    background-color: rgb(28, 28, 28);
     height: 6rem;
 }
 
