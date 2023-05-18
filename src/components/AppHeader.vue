@@ -4,19 +4,21 @@ export default {};
 
 <template>
     <header>
-        <img src="../assets/img/dc-logo.png" alt="">
-        <ul class="head_list">
-            <li>CHARACTER</li>
-            <li>COMICS</li>
-            <li>MOVIES</li>
-            <li>TV</li>
-            <li>GAMES</li>
-            <li>COLLECTIBLES</li>
-            <li>VIDEOS</li>
-            <li>FANS</li>
-            <li>NEWS</li>
-            <li>SHOP</li>
-        </ul>
+        <nav>
+            <img src="../assets/img/dc-logo.png" alt="">
+            <ul class="head_list">
+                <li>CHARACTER</li>
+                <li>COMICS</li>
+                <li>MOVIES</li>
+                <li>TV</li>
+                <li>GAMES</li>
+                <li>COLLECTIBLES</li>
+                <li>VIDEOS</li>
+                <li>FANS</li>
+                <li>NEWS</li>
+                <li>SHOP</li>
+            </ul>
+        </nav>
     </header>
 </template>
 
@@ -25,12 +27,14 @@ export default {};
 
 header {
     background-color: white;
+}
+nav {
+    max-width: 1000px;
+    margin: auto;
     height: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 2rem;
-    
 }
 .head_list {
     list-style: none;
