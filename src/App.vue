@@ -10,19 +10,21 @@ export default {
 </script>
 
 <template>
-  <header>
-    <app-header />
-  </header>
-  <main>
-    <app-main />
-  </main>
-  <footer>
-    <app-footer />
-  </footer>
+  <div class="container">
+    <header>
+      <app-header />
+    </header>
+    <main>
+      <app-main />
+    </main>
+    <footer>
+      <app-footer />
+    </footer>
+  </div>
 </template>
 
 <style lang="scss">
- @use './assets/styles/general.scss';
+ @use './assets/styles/general.scss' as *;
 
 </style>
 
