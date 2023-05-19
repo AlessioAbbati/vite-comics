@@ -40,6 +40,9 @@ export default {
                     color: black;
                     text-decoration: none;
                     font-size: 1rem;
+                    &:hover {
+                        color: rgb(12, 119, 234);
+                    }
                 }
             }
 

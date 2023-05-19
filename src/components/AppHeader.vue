@@ -96,7 +96,7 @@ button {
     position: absolute;
     bottom: -1.2rem;
     left: 5rem;
-    background-color: rgb(12, 119, 234);;
+    background-color: rgb(12, 119, 234);
     color: white;
     padding: 1rem;
     width: 12rem;
