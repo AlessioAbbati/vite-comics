@@ -63,7 +63,7 @@ export default {
             <app-navbar v-for="title in arrList" :key="title.title" :title="title.title" :link="title.link" />
         </div>
         <div class="jumbo"></div>
-        <button>CURRENT SERIES</button>
+        <button><a href="">CURRENT SERIES</a></button>
     </header>
 </template>
 
@@ -97,10 +97,13 @@ button {
     bottom: -1.2rem;
     left: 5rem;
     background-color: rgb(12, 119, 234);
-    color: white;
     padding: 1rem;
     width: 12rem;
     font-weight: 1000;
+    a {
+        text-decoration: none;
+        color: white;
+    }
 }
 }
 
