@@ -8,25 +8,21 @@ export default {
 </script>
 
 <template>
-    <div class="nav-container">
+    
         <nav>
             
             <ul class="head_list">
                 <li><a href="#">{{ title }}</a></li>
             </ul>
         </nav>
-    </div>
+   
 </template>
 
 <style lang="scss" scoped>
 
-.nav-container {
-    background-color: white;
-    height: 6rem;
 
+    
     nav {
-        max-width: 1200px;
-        margin: auto;
         height: 6rem;
         display: flex;
         align-items: center;
@@ -37,7 +33,6 @@ export default {
             list-style: none;
             display: flex;
             justify-content: flex-end;
-            padding-inline: 1rem;
             font-size: .7rem;
             li {
                 padding-inline: 1rem;
@@ -50,7 +45,7 @@ export default {
 
         }
     }
-}
+
 
 
 

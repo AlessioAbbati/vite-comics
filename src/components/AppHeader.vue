@@ -54,10 +54,15 @@ export default {
 
 <template>
     <header>
-        <div class="img-container">
-            <img src="../assets/img/dc-logo.png" alt="">
+
+        <div class="head-container">
+            <div class="nav-container">
+                <img src="../assets/img/dc-logo.png" alt="">
+                
+            </div>
+            <app-navbar v-for="title in arrList" :key="title.title" :title="title.title" :link="title.link" />
         </div>
-        <app-navbar v-for="title in arrList" :key="title.title" :title="title.title" :link="title.link" />
+        <div class="jumbo"></div>
     </header>
 </template>
 
@@ -65,21 +70,28 @@ export default {
 @use './../assets/styles/partials/variables.scss' as *;
 
 header {
-    background-image: url('../assets/img/jumbotron.jpg');
-    height: 20rem;
-    background-size: cover;
-    display: flex;
-    .img-container {
+    .head-container {
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+    .nav-container {
         width: 100%;
         display: flex;
         align-items: center;
         height: 6rem;
         background-color: white;
         img {
-            width: 20%;
+            width: 15%;
         }
     }
 }
+.jumbo {
+    background-image: url('../assets/img/jumbotron.jpg');
+    background-size: cover;
+    height: 25rem;
+}
+}
+
 
 
 </style>
