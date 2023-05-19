@@ -11,13 +11,34 @@ export default {
 </script>
 
 <template>
-    <div>
+    <div class="cards">
+
         <img :src="urlImg" :alt="series" />
-        <h3>{{ series }}</h3>
+
+        <div class="text-container">
+            <h3>{{ series }}</h3>
+        </div>
     </div>
-  
 </template>
 
 <style lang="scss" scoped>
+  .cards {
+    width: calc((100% / 6) - 2rem);
+    height: 193.45px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    h3 {
+        color: white;
+        font-size: .7rem;
+        white-space: wrap;
+        padding-top: .5rem;
+    }
+  }
 
 </style>
