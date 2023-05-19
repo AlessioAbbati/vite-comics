@@ -63,6 +63,7 @@ export default {
             <app-navbar v-for="title in arrList" :key="title.title" :title="title.title" :link="title.link" />
         </div>
         <div class="jumbo"></div>
+        <button>CURRENT SERIES</button>
     </header>
 </template>
 
@@ -70,6 +71,7 @@ export default {
 @use './../assets/styles/partials/variables.scss' as *;
 
 header {
+    position: relative;
     .head-container {
         max-width: 1200px;
         margin: auto;
@@ -89,6 +91,16 @@ header {
     background-image: url('../assets/img/jumbotron.jpg');
     background-size: cover;
     height: 25rem;
+}
+button {
+    position: absolute;
+    bottom: -1.2rem;
+    left: 5rem;
+    background-color: rgb(12, 119, 234);;
+    color: white;
+    padding: 1rem;
+    width: 12rem;
+    font-weight: 1000;
 }
 }
 
