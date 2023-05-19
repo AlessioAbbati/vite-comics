@@ -96,6 +96,7 @@ export default {
             />
 
         </div>
+        <button>LOAD MORE</button>
     </main>
 </template>
 
@@ -104,11 +105,23 @@ export default {
 
 main {
     background-color: rgb(28, 28, 28);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .contents {
         display: flex;
         flex-wrap: wrap;
         max-width: 1200px;
         margin: auto;
+    }
+    button {
+        background-color: rgb(12, 119, 234);;
+        color: white;
+        padding: .7rem;
+        width: 10rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 }
 
